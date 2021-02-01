@@ -1,6 +1,6 @@
 import './App.css';
 import Tasks from './components/Tasks';
-
+import AddTask from './components/AddTask';
 import Header from './components/Header';
 import { useState } from 'react';
 
@@ -45,6 +45,7 @@ const  App = () => {
   return (
     <div className="container">
       <Header/>
+      <AddTask/>
       {tasks.length > 0 ?
        <Tasks task ={tasks} 
        onDelete = {deleteTask} 
