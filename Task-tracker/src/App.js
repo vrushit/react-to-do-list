@@ -1,5 +1,5 @@
 import './App.css';
-import Task from './components/Task';
+import Task from './components/Tasks';
 
 import Header from './components/Header';
 import { useState } from 'react';
