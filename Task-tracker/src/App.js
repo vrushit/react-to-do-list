@@ -37,7 +37,7 @@ const  App = () => {
   return (
     <div className="container">
       <Header/>
-      <Tasks task ={tasks} onDelete = {deleteTask}/>
+      {tasks.length > 0 ? <Tasks task ={tasks} onDelete = {deleteTask}/> : ' '}
     </div>
   );
 }
