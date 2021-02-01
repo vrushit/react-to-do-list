@@ -36,7 +36,9 @@ const  App = () => {
     //Toggle remainder
 
     const toggleRemainder = (id) => {
-
+      setTasks(tasks.map((task) => task.id === id ? { 
+        ...task, remainder: !task.remainder
+      } : task))
     }
 
 
