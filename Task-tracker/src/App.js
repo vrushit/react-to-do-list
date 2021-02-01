@@ -29,7 +29,7 @@ const  App = () => {
 
     //Add Task
 
-    const AddTask = (task) => {
+    const addTask = (task) => {
 
     }
 
@@ -51,7 +51,7 @@ const  App = () => {
   return (
     <div className="container">
       <Header/>
-      <AddTask/>
+      <AddTask onAdd = {addTask}/>
       {tasks.length > 0 ?
        <Tasks task ={tasks} 
        onDelete = {deleteTask} 
