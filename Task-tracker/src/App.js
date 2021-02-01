@@ -5,7 +5,7 @@ import Header from './components/Header';
 import { useState } from 'react';
 
 const  App = () => {
-  const [showAddTask, setShowTask] = useState(false)
+  const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState(
     [{
         id:1,
@@ -54,7 +54,7 @@ const  App = () => {
 
   return (
     <div className="container">
-      <Header/>
+      <Header onAdd = { () => setShowAddTask(!showAddTask)}/>
       {showAddTask && <AddTask onAdd = {addTask}/>}
       {tasks.length > 0 ?
        <Tasks task ={tasks} 
