@@ -27,6 +27,12 @@ const  App = () => {
     }
     ])
 
+    //Add Task
+
+    const AddTask = (task) => {
+
+    }
+
     //Delete Task
 
     const deleteTask  = (id) => {
